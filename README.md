@@ -2,11 +2,20 @@
 
 > vue??????
 
+### 1.?????
+``` js
+let wxpay = new wxPay({
+  appid:appid,
+  mch_id:mch_id,
+  sign_type:"MD5",
+  notify_url:notify_url,
+},mch_secert)
+```
+
 ## ??
 
 ``` bash
 # 1.npm install
-
 ```
 
 
