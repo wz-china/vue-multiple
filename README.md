@@ -2,7 +2,7 @@
 
 > vue工程化架构
 
-###包括vuex/mock/axios/router
+### 包括vuex/mock/axios/router
 
 ### 1.运行
 
