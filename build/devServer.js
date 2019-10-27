@@ -1,5 +1,4 @@
 const cprocess = require('child_process')
-const path = require("path")
 let entryDir = process.argv[process.argv.length-1]
 // let cmd = 'npm run startdev -- --env.name=' + entryDir
 const ls = cprocess.spawn('npm.cmd', ['run', 'startdev','--',`--env.name=${entryDir}`]);
