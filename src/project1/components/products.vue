@@ -4,6 +4,8 @@
     <div>商品数量：{{computed_num}}</div>
     <div @click="changeStore">修改store</div>
     <div @click="changeSyncStore">异步修改store</div>
+
+    <div class="flexible">flexible</div>
   </div>
 </template>
 
@@ -41,5 +43,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
+
+  .flexible{
+    width:6.4rem;
+    height:30px;
+    background: red;
+  }
 </style>

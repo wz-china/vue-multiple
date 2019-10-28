@@ -7,6 +7,10 @@ import '../common/plugins/axios'
 import Mock from './mock/index'
 import storeModules from "./store/index"
 
+import flexible from "flexible.js"
+
+flexible(640,750)
+
 Vue.use(Mock)
 
 Vue.use(Vuex)
