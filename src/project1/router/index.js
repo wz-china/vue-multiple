@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '../components/HelloWorld'
-import products from '../components/products'
 
 Vue.use(Router)
 
@@ -11,12 +9,12 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: HelloWorld
+      component: r => require.ensure([], () => r(require('../pages/HelloWorld.vue')), 'hellowolrd')
     },
     {
       path: '/products',
       name: 'products',
-      component: products
+      component: r => require.ensure([], () => r(require('../pages/products.vue')), 'products')
     }
   ]
 })
