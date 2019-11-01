@@ -11,7 +11,7 @@
     <test-model
       v-model="value"
     ></test-model>
-    <div>得到双向绑定的值为：{{value}}</div>
+    <div class="buling">得到双向绑定的值为：{{value}}</div>
 
 
   </div>
@@ -62,6 +62,35 @@ export default {
     width:6.4rem;
     height:30px;
     background: red;
+  }
+
+
+  /**
+     动画
+     1.keyframes 关键帧
+     2.bulingling  动画名
+     3.{
+        0%：关键帧点
+     }
+   */
+  @keyframes bulingling {
+    0%{
+      color: #000;
+    }
+    50%{
+      color: orange;
+    }
+    100%{
+      color: #000;
+    }
+
+  }
+
+  /**
+    animation:关键帧 时间 运动曲线 循环次数
+   */
+  .buling{
+    animation: bulingling 1.5s ease-out infinite;
   }
 
 
